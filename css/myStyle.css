@@ -1,0 +1,668 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/musicnet");
+
+@font-face {
+  font-display: swap;
+  font-family: "music";
+  src: url("https://static.wixstatic.com/ufonts/82f873_bcf67d8503f4459592db1104eccffce7/woff2/file.woff2")
+      format("woff2"),
+    url("https://static.wixstatic.com/ufonts/82f873_bcf67d8503f4459592db1104eccffce7/woff/file.woff")
+      format("woff"),
+    url("https://static.wixstatic.com/ufonts/82f873_bcf67d8503f4459592db1104eccffce7/ttf/file.ttf")
+      format("ttf");
+}
+
+:root {
+  --color_0: 255, 255, 255;
+  --color_1: 255, 255, 255;
+  --color_2: 0, 0, 0;
+  --color_3: 237, 28, 36;
+  --color_4: 0, 136, 203;
+  --color_5: 255, 203, 5;
+  --color_6: 114, 114, 114;
+  --color_7: 176, 176, 176;
+  --color_8: 255, 255, 255;
+  --color_9: 114, 114, 114;
+  --color_10: 176, 176, 176;
+  --color_11: 0, 0, 0;
+  --color_12: 82, 82, 82;
+  --color_13: 102, 102, 102;
+  --color_14: 153, 153, 153;
+  --color_15: 255, 255, 255;
+  --color_16: 27, 63, 27;
+  --color_17: 53, 126, 53;
+  --color_18: 80, 189, 80;
+  --color_19: 106, 252, 107;
+  --color_20: 180, 253, 181;
+  --color_21: 71, 84, 27;
+  --color_22: 143, 167, 54;
+  --color_23: 214, 251, 81;
+  --color_24: 234, 252, 167;
+  --color_25: 241, 254, 196;
+  --color_26: 63, 26, 44;
+  --color_27: 126, 53, 88;
+  --color_28: 189, 79, 131;
+  --color_29: 252, 105, 175;
+  --color_30: 253, 180, 215;
+  --color_31: 1, 1, 65;
+  --color_32: 52, 52, 103;
+  --color_33: 95, 95, 141;
+  --color_34: 135, 135, 179;
+  --color_35: 174, 174, 217;
+  --color_36: 255, 255, 255;
+  --color_37: 0, 0, 0;
+  --color_38: 232, 230, 230;
+  --color_39: 199, 199, 199;
+  --color_40: 89, 89, 89;
+  --color_41: 0, 87, 225;
+  --color_42: 0, 0, 0;
+  --color_43: 199, 199, 199;
+  --color_44: 255, 255, 255;
+  --color_45: 0, 0, 0;
+  --color_46: 0, 0, 0;
+  --color_47: 89, 89, 89;
+  --color_48: 0, 87, 225;
+  --color_49: 0, 87, 225;
+  --color_50: 255, 255, 255;
+  --color_51: 255, 255, 255;
+  --color_52: 0, 87, 225;
+  --color_53: 0, 87, 225;
+  --color_54: 199, 199, 199;
+  --color_55: 199, 199, 199;
+  --color_56: 255, 255, 255;
+  --color_57: 255, 255, 255;
+  --color_58: 0, 87, 225;
+  --color_59: 0, 87, 225;
+  --color_60: 0, 87, 225;
+  --color_61: 0, 87, 225;
+  --color_62: 255, 255, 255;
+  --color_63: 255, 255, 255;
+  --color_64: 199, 199, 199;
+  --color_65: 199, 199, 199;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  user-select: none;
+}
+
+.btn-wsp {
+  position: fixed;
+  padding-top: 15px;
+  width: 80px;
+  height: 80px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 50px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.btn-wsp:hover {
+  background: #fc69af;
+  color: #0df053;
+}
+
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5s ease;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 130px;
+  width: 130px;
+  padding-right: 10px;
+}
+
+header span {
+  font-family: "MUSIC", sans-serif;
+  font-size: 55px;
+  color: #6afc6b;
+}
+
+header .navigation {
+  position: relative;
+}
+
+header .navigation .navigation-items a {
+  position: relative;
+  color: #6afc6b;
+  font-size: 1.3em;
+  font-weight: 200;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+  content: "";
+  position: absolute;
+  background: rgb(252, 105, 175);
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s ease;
+}
+
+header .navigation .navigation-items a:hover {
+  color: rgb(252, 105, 175);
+  font-size: 1.4em;
+}
+
+header .navigation .navigation-items a:hover::before {
+  width: 100%;
+}
+
+.home {
+  width: 100vw;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home::before {
+  z-index: 777;
+  content: "";
+  position: absolute;
+  background: rgba(1, 1, 65, 0.6);
+  width: 100%;
+  height: 165px;
+  top: 0;
+  left: 0;
+}
+
+.home video {
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+  top: 0;
+  left: 0;
+  z-index: 000;
+  position: fixed;
+}
+
+.home .content {
+  z-index: 888;
+  color: var(--color-light);
+  width: 100%;
+}
+
+.home .content.active {
+  display: block;
+}
+
+.home .content .slogan {
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 250px;
+  color: rgb(var(--color_19));
+  text-align: center;
+}
+
+.home .content span {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: rgb(var(--color_29));
+}
+
+.home .content h1 span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.home .content p {
+  margin-bottom: 65px;
+}
+
+.home .content a {
+  background: #fff;
+  padding: 15px 35px;
+  color: #1680ac;
+  font-size: 1.1em;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.home .media-icons {
+  z-index: 888;
+  position: absolute;
+  right: 60px;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5 ease;
+}
+
+.home .media-icons a {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  font-size: 1.6em;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding-top: 1.5px;
+}
+
+.home .media-icons a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.home .media-icons a:hover {
+  transform: scale(1.4);
+}
+
+.media-icons a.facebook:hover {
+  background: #3b5998;
+  color: #fff;
+}
+
+.media-icons a.instagram:hover {
+  background: #f09433;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
+  color: #fff;
+}
+
+.media-icons a.twitter:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.media-icons a.tiktok:hover {
+  background: rgb(0, 0, 0);
+  text-shadow: 2px 2px rgb(255, 0, 80), -2px -2px #00f2ea;
+  color: #fff;
+}
+
+.media-icons a.google:hover {
+  background: #d34836;
+  color: #fff;
+}
+
+.media-icons a.youtube:hover {
+  background: rgb(255, 0, 0);
+  color: #fff;
+}
+
+.slider-navigation {
+  z-index: 888;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(80px);
+  margin-bottom: 12px;
+}
+
+.slider-navigation .navigate-btn {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+}
+
+.slider-navigation .navigate-btn.active {
+  background: #2696e9;
+}
+
+.slider-navigation .navigate-btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.slider-navigation .navigate-btn:hover {
+  transform: scale(1.3);
+}
+
+.video-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.video-slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s ease;
+  transition-property: clip-path;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home .wave {
+  position: absolute;
+  bottom: -525px;
+  width: 100%;
+}
+
+.wave2 {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+}
+
+.gallery {
+  background-image: url(./media/images/party-02.jpg);
+  position: relative;
+  z-index: 111;
+  width: 100vw;
+  height: 1010px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery::before {
+  z-index: 000;
+  content: "";
+  position: absolute;
+  /*background: rgba(3, 96, 251, 0.3);*/
+  background: linear-gradient(to bottom, #010141, transparent);
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.swiper {
+  background-color: transparent;
+}
+
+.swiper h1 {
+  color: #fff;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.swiper h1 span {
+  color: #fc69af;
+}
+
+.swiper-slide {
+  z-index: 888;
+  border-radius: 15px;
+  height: 100px;
+  width: 295px;
+  position: relative;
+  padding: 20px 0px 20px 25px;
+}
+
+.swiper-slide img {
+  height: 200px;
+  width: 295px;
+  border-radius: 15px;
+}
+
+.swiper-txt {
+  position: absolute;
+  left: 25%;
+  top: 70%;
+  padding: 25px;
+}
+
+.swiper-txt h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #fff;
+  text-shadow: 5px 5px 1px black;
+}
+
+.swiper-button-next {
+  margin-left: 150px;
+}
+
+.swiper-button-prev {
+  margin-right: 150px;
+}
+
+.desktop {
+  text-align: center;
+}
+
+.desktop img {
+  margin-top: 100px;
+  width: 800px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+main {
+  position: relative;
+  z-index: 111;
+  background: linear-gradient(to top, rgba(1, 1, 65, 0.7), #fc69af);
+  width: 100vw;
+  height: 300px;
+}
+
+main .socials {
+  padding-top: 100px;
+  font-family: "MUSIC";
+  font-size: 55px;
+  color: #6afc6b;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  background-color: #0df053;
+}
+
+footer {
+  background-color: rgba(1, 1, 65, 0.7);
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.socialIcons a i {
+  font-size: 2em;
+  margin-left: -2px;
+}
+/* Hover affect on social media icon */
+
+.footerNav {
+  margin: 30px 0;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+.footerBottom {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p {
+  color: white;
+}
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px) {
+  .footerNav ul {
+    flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .socialIcons a {
+    padding: 8px;
+    margin: 4px;
+  }
+}
+
+@media (max-width: 1040px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  section {
+    padding: 100px 20px;
+  }
+
+  .home .media-icons {
+    right: 15px;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 1, 1, 0.5);
+  }
+
+  header .navigation.active .navigation-items {
+    background: transparent;
+    width: 600px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+  }
+
+  header .navigation .navigation-items a {
+    color: #fff;
+    font-size: 1.2em;
+    margin: 20px;
+  }
+
+  header .navigation .navigation-items a::before {
+    background: var(--color-primary-50);
+    height: 5px;
+  }
+
+  header .nav-btn {
+    background: url(./resources/menu2.svg) no-repeat;
+    background-size: 30px;
+    background-position: center;
+
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  header .nav-btn.active {
+    z-index: 999;
+    background: url(./resources/close.png) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    transition: 0.3s;
+  }
+
+  .video-slide.active {
+    clip-path: circle(105% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+  }
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
